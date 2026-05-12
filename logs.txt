@@ -1,0 +1,17 @@
+[2026-05-11 21:39:37] [NEW FILE] monitor_folder\test.txt.txt
+[2026-05-11 21:40:07] [MODIFIED] monitor_folder\test.txt.txt
+[2026-05-11 21:41:57] [DELETED] monitor_folder\test.txt.txt
+[2026-05-11 21:42:05] [NEW FILE] monitor_folder\New Text Document.txt
+[2026-05-11 21:42:17] [NEW FILE] monitor_folder\test.txt
+[2026-05-11 21:42:17] [DELETED] monitor_folder\New Text Document.txt
+[2026-05-11 21:42:27] [MODIFIED] monitor_folder\test.txt
+[2026-05-11 21:42:42] [MODIFIED] monitor_folder\test.txt
+[2026-05-11 21:43:07] [MODIFIED] monitor_folder\test.txt
+[2026-05-11 21:43:47] [MODIFIED] monitor_folder\test.txt
+[2026-05-11 21:44:02] [MODIFIED] monitor_folder\test.txt
+[2026-05-11 21:44:07] [DELETED] monitor_folder\test.txt
+[2026-05-11 21:51:12] [NEW FILE] monitor_folder\New Text Document.txt
+[2026-05-11 21:51:18] [NEW FILE] monitor_folder\test.txt
+[2026-05-11 21:51:18] [DELETED] monitor_folder\New Text Document.txt
+[2026-05-11 21:51:48] [MODIFIED] monitor_folder\test.txt
+[2026-05-11 21:52:13] [DELETED] monitor_folder\test.txt

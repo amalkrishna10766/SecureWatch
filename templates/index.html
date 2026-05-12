@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>SecureWatch</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>SecureWatch</h1>
+
+        <div class="stats">
+
+    <div class="card total">
+        <h2>{{ total_events }}</h2>
+        <p>Total Events</p>
+    </div>
+
+    <div class="card new-card">
+        <h2>{{ new_count }}</h2>
+        <p>New Files</p>
+    </div>
+
+    <div class="card modified-card">
+        <h2>{{ modified_count }}</h2>
+        <p>Modified</p>
+    </div>
+
+    <div class="card deleted-card">
+        <h2>{{ deleted_count }}</h2>
+        <p>Deleted</p>
+    </div>
+
+</div>
+<a href="/download">
+
+    <button class="download-btn">
+
+        Download Logs
+
+    </button>
+
+</a>
+
+        <div class="logs">
+
+            {% for log in logs %}
+
+{% if "NEW FILE" in log %}
+
+<div class="log new">
+
+    {{ log }}
+
+</div>
+
+{% elif "MODIFIED" in log %}
+
+<div class="log modified">
+
+    {{ log }}
+
+</div>
+
+{% elif "DELETED" in log %}
+
+<div class="log deleted">
+
+    {{ log }}
+
+</div>
+
+{% else %}
+
+<div class="log">
+
+    {{ log }}
+
+</div>
+
+{% endif %}
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+    <div id="clock"></div>
+    <script>
+
+function updateClock(){
+
+    const now = new Date();
+
+    document.getElementById("clock").innerHTML =
+        now.toLocaleString();
+
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+
+</script>
+
+</body>
+<script>
+
+setTimeout(() => {
+
+    location.reload();
+
+}, 3000);
+
+</script>
+</html>
